@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "jadlis-obsidian",
+  "version": "1.0.0",
+  "displayName": "Obsidian один в один с владельцем",
+  "description": "Второй шаг маршрута Jadlis: приложение Obsidian, подписка Sync, папки vault, конфигурация .obsidian владельца — 12 плагинов, тема Border, хоткеи, CSS-сниппет, — бандл скиллов Obsidian с CLI и CLAUDE.md внутри vault.",
+  "author": {
+    "name": "Be Cyborg"
+  },
+  "homepage": "https://github.com/beCyborg/jadlis-obsidian",
+  "repository": "https://github.com/beCyborg/jadlis-obsidian",
+  "keywords": [
+    "obsidian",
+    "vault",
+    "notes",
+    "sync",
+    "obsidian-cli",
+    "jadlis"
+  ],
+  "userConfig": {
+    "VAULT_PATH": {
+      "type": "directory",
+      "title": "Папка vault",
+      "description": "Куда ставить Obsidian-хранилище: сюда лягут папки заметок, CLAUDE.md и конфигурация .obsidian. Если не задать, берётся ~/Jadlis.",
+      "default": "~/Jadlis",
+      "required": false
+    }
+  }
+}

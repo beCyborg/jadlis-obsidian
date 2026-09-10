@@ -1,0 +1,10 @@
+{
+  "cssTheme": "Border",
+  "showViewHeader": true,
+  "showRibbon": false,
+  "translucency": false,
+  "theme": "system",
+  "enabledCssSnippets": [
+    "hide-files"
+  ]
+}

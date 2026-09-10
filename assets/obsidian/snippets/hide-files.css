@@ -1,0 +1,8 @@
+div[data-path="AI"],
+div[data-path="supabase"],
+div[data-path="AGENTS.md"] {
+  display: none;
+}
+div[data-path="CLAUDE.md"] {
+  display: none;
+}

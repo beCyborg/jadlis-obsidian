@@ -1,0 +1,33 @@
+{
+  "generalSettings": {
+    "displayNotesCreatedOnDate": false,
+    "displayNoteIndicator": false,
+    "displayCreatedNoteCountIndicator": false,
+    "useModifierKeyToCreateNote": false,
+    "firstDayOfWeek": 1,
+    "weekNumberStandard": 0,
+    "displayNotesCreatedOnDateIndicator": false
+  },
+  "notesSettings": {
+    "displayDateTemplate": "HH:mm",
+    "useCreatedOnDateFromProperties": false,
+    "createdOnDatePropertyName": "created_on",
+    "createdOnPropertyFormat": "yyyy/MM/dd HH:mm",
+    "sortNotes": "ascending"
+  },
+  "dailyNotes": {
+    "nameTemplate": "yyyy-MM-dd"
+  },
+  "weeklyNotes": {
+    "nameTemplate": "RRRR-'W'II"
+  },
+  "monthlyNotes": {
+    "nameTemplate": "yyyy-MM"
+  },
+  "quarterlyNotes": {
+    "nameTemplate": "yyyy-'Q'Q"
+  },
+  "yearlyNotes": {
+    "nameTemplate": "yyyy"
+  }
+}
