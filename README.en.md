@@ -1,4 +1,4 @@
-[Русский](README.md) · English
+English · [Русский](README.md)
 
 # Obsidian installs in an evening and gets configured for half a year — and still is not right
 
@@ -14,6 +14,11 @@ claude plugin install jadlis-obsidian@jadlis --config VAULT_PATH=~/Jadlis
 This is the second step of the Jadlis route. The first is setting up Claude Code itself,
 the third is voice.
 
+![The app, the folders, the plugins and theme, the agent rules come together into a ready vault](docs/img/hero-jadlis-obsidian.webp)
+
+In words: on the left four pieces — the app, the folders, the plugins with the theme and the rules
+for the agent — on the right a ready vault where your pane layout stays yours.
+
 This is my own workplace published as it is, not a product: what I stopped using, I removed.
 
 ## Before → after
@@ -27,6 +32,16 @@ This is my own workplace published as it is, not a product: what I stopped using
 | **How you know it all landed.** You look at the screen and hope. | Ask and it answers "it should work". | Claude creates a note through the CLI and reads it back, and you check the hotkey with your fingers: select a word, press ⌘⇧H. |
 
 ## How it works
+
+![The check, the app and folders, the plugins and theme, the agent rules, a check that does something](docs/img/how-jadlis-obsidian.webp)
+
+Going in — a Mac and the path the vault will live at.
+Inside — the check prints PASS/FAIL, only the missing parts are acted on, and the previous
+configuration goes into a backup.
+Coming out — a vault in which the agent knows where notes belong.
+
+In words: check → app and folders → plugins and theme → rules for the agent → a check that does
+something.
 
 What arrives on your Mac:
 
@@ -89,12 +104,28 @@ Then tell me in one line: restart Claude Code and type /obsidian.
 Show me each command in full before running it and wait for a "yes".
 ```
 
-**b) By hand.** The two commands from the top of this file, then a Claude Code restart.
+**b) The commands by hand.**
 
-The first run is `/obsidian` (full form `/jadlis-obsidian:obsidian`).
-To see what is already set up without changing anything — `/obsidian статус`.
+```
+claude plugin marketplace add https://github.com/beCyborg/jadlis-hub
+claude plugin install jadlis-obsidian@jadlis --config VAULT_PATH=~/Jadlis
+claude plugin list
+```
 
-The vault path is set at install time through `VAULT_PATH`; leave it out and `~/Jadlis` is used.
+The first command installs nothing — it adds the marketplace. Only the second installs, and it is
+removed by one line: `claude plugin uninstall jadlis-obsidian@jadlis --keep-data`. The vault path
+is set at install time through `VAULT_PATH`; leave it out and `~/Jadlis` is used.
+
+**c) The short command.** Restart Claude Code and type:
+
+```
+/obsidian
+/obsidian статус
+```
+
+Not found — check the name with `claude plugin list`. `/obsidian` and the full form
+`/jadlis-obsidian:obsidian` are the same thing; `статус` only shows what is already set up and
+changes nothing.
 
 ## Limits, cost, updates
 
@@ -114,8 +145,8 @@ There is no semantic search over notes here — it lives separately and is not p
 shell scripts and questions to the human. The most expensive part is reading a `diff` when an
 existing `CLAUDE.md` gets in the way.
 
-**Verified where I work:** my Mac, my subscription, Obsidian 1.13.7. Where else this works —
-[уточнить].
+**Verified where I work:** my Mac, my subscription, Obsidian 1.13.7. macOS only: the bundle leans
+on Homebrew and on the app living in `/Applications`; I have tested no other system.
 
 **Terms of use.** There is no license: all rights reserved by the author. You may read it and
 use it personally. Commercial use, republishing and bundling it into your own products —
