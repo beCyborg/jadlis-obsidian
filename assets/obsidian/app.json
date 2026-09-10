@@ -1,0 +1,12 @@
+{
+  "defaultViewMode": "preview",
+  "spellcheck": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Входящие",
+  "attachmentFolderPath": "Файлы",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": false,
+  "showInlineTitle": true,
+  "propertiesInDocument": "hidden",
+  "userIgnoreFilters": []
+}

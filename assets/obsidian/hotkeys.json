@@ -1,0 +1,14 @@
+{
+  "sidebar-highlights:create-highlight": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "H"
+    }
+  ],
+  "app:go-back": [],
+  "app:go-forward": [],
+  "workspace:edit-file-title": []
+}
