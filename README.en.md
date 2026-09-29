@@ -25,9 +25,9 @@ This is my own workplace published as it is, not a product: what I stopped using
 
 | By hand | With an AI chat | With this plugin |
 |---|---|---|
-| **How the plugin set comes together.** You open Community plugins, read descriptions, install at random, and remove half of them later. | You ask "which plugins should I install" and get a list from articles, part of it abandoned. | Exactly the 12 I use every day arrive as ready builds with their settings — including the theme knobs, without which Border does not look right. |
+| **How the plugin set comes together.** You open Community plugins, read descriptions, install at random, and remove half of them later. | You ask "which plugins should I install" and get a list from articles, part of it abandoned. | Exactly the 10 I use every day arrive as ready builds with their settings — including the theme knobs, without which Border does not look right. |
 | **How settings get carried over.** You copy the whole `.obsidian` and drag along someone else's paths, bookmarks and pane layout. | A chat does not carry settings over — it retells them. | The export follows the plugin list strictly, paths and personal data are stripped, and the recipient's `workspace.json` is not touched at all. |
-| **How Restricted mode gets turned off.** You hunt for the toggle in settings and wonder why the plugins stay silent. | It explains where the toggle is, and that is all. | It is turned off by a CLI command, and the same command then shows: 12 plugins enabled, theme Border, no errors. |
+| **How Restricted mode gets turned off.** You hunt for the toggle in settings and wonder why the plugins stay silent. | It explains where the toggle is, and that is all. | It is turned off by a CLI command, and the same command then shows: 10 plugins enabled, theme Border, no errors. |
 | **How it connects to the agent.** The agent sees the folder as ordinary files and drops notes anywhere. | You explain from scratch every time that this is Obsidian and what lives where. | The vault gets a `CLAUDE.md` with the conventions and a `.claude/rules/vault-cli.md` with the search pitfalls; the Obsidian skills bundle and `obsidian-cli` get installed. |
 | **How you know it all landed.** You look at the screen and hope. | Ask and it answers "it should work". | Claude creates a note through the CLI and reads it back, and you check the hotkey with your fingers: select a word, press ⌘⇧H. |
 
@@ -51,7 +51,7 @@ What arrives on your Mac:
 | **The Sync subscription** | the link and why it matters; you buy it yourself, the price is on the page. |
 | **Vault folders** | `Входящие`, `Файлы`, `Знания`, `Система/Планы` — four of them, no methodology. |
 | **Obsidian settings** | `app.json`, `appearance.json`, `core-plugins.json`: a new note goes to `Входящие`, an attachment to `Файлы`, the default mode is reading. |
-| **12 plugins** | Style Settings (theme knobs), Advanced Canvas (diagrams), Daily notes calendar (calendar of day notes), Folder notes (a cover note for a folder), Periodic Notes (day, week, month, quarter), My SVGs (your own icons), Iconic (folder icons and colours), Linter (auto-format on save), Dragger (dragging blocks), Sidebar Highlights (highlights in the panel), Editing Toolbar (a formatting bar), Flexplorer (sorting and hiding in the file explorer). |
+| **10 plugins** | Style Settings (theme knobs), Advanced Canvas (diagrams), Daily notes calendar (calendar of day notes), Folder notes (a cover note for a folder), My SVGs (your own icons), Iconic (folder icons and colours), Dragger (dragging blocks), Sidebar Highlights (highlights in the panel), Editing Toolbar (a formatting bar), Flexplorer (sorting and hiding in the file explorer). |
 | **Theme and snippet** | the Border theme with its saved colours plus the `hide-files` CSS snippet. |
 | **Hotkeys** | the owner's bindings, ⌘⇧H for a highlight included; hotkeys of plugins that are not shipped are stripped. |
 | **CLI** | `obsidian-cli` from inside the app and a `~/bin/obsidian` symlink — Claude reads and writes notes from the terminal. |
@@ -70,7 +70,7 @@ The skill walks nine steps, one per turn, and says what it will do before each o
 5. **The `.obsidian` configuration.** First a dry run listing the files, then the question,
    then the copy with the previous folder backed up.
 6. **Open the vault and turn Restricted mode off.** A running Obsidian takes the folder over
-   IPC, no clicking. Then the CLI turns Restricted mode off and checks: 12 plugins enabled,
+   IPC, no clicking. Then the CLI turns Restricted mode off and checks: 10 plugins enabled,
    theme Border, no errors.
 7. **Sync.** Signing in happens only in the Obsidian interface.
 8. **Bundle and CLI.** `obsidian@obsidian-skills` and the `~/bin/obsidian` symlink.
@@ -156,8 +156,8 @@ by arrangement with me.
 builds of community Obsidian plugins and of the Border theme. They stay under their own licenses
 and with their own authors: Advanced Canvas (Developer-Mike), Daily notes calendar (bartkessels),
 Dragger (Ariestar), Editing Toolbar (Cuman), Flexplorer (kh4f), Folder notes (Lost Paul),
-Iconic (Holo), My SVGs (Omar Badawy), Linter (Victor Tao), Style Settings (mgmeyers),
-Periodic Notes (Liam Cain), Sidebar Highlights (trevware), Border theme (Akifyss).
+Iconic (Holo), My SVGs (Omar Badawy), Style Settings (mgmeyers), Sidebar Highlights (trevware),
+Border theme (Akifyss).
 Each one's license and repository address are in its `manifest.json`; license files travel with
 the build whenever the author ships them. The `obsidian-skills` bundle is installed from the
 kepano marketplace and lives by its own rules.

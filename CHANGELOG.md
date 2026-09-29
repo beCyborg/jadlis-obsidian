@@ -2,6 +2,26 @@
 
 Формат: [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/), версии — [SemVer](https://semver.org/lang/ru/).
 
+## [1.0.1] — 2026-09-30 — Без Linter и Periodic Notes / Linter and Periodic Notes dropped
+
+### Для человека
+- В сборке теперь 10 community-плагинов: владелец убрал из своего vault Linter и Periodic Notes.
+- Linter только проставлял даты `created`/`modified`, которые никто не читает. Periodic Notes 0.0.17
+  заброшен, помечен уязвимыми зависимостями и дублирует календарь Daily notes calendar и скиллы
+  заметок дня.
+
+### For agents
+- Removed: `assets/obsidian/plugins/obsidian-linter/`, `assets/obsidian/plugins/periodic-notes/`
+  and both ids in `assets/obsidian/community-plugins.json` (12 → 10).
+- Removed: their `DATA_JSON_POLICY` entries in `tools/export-obsidian.py` (incl. the periodic-notes
+  `*.folder`/`*.template` strip rule).
+- Changed: plugin count 12 → 10 and plugin lists in `.claude-plugin/plugin.json`, `README.md`,
+  `README.en.md`, `skills/obsidian/SKILL.md`, `skills/obsidian/references/plugins.md`,
+  `skills/obsidian/references/probe-keys.md`, `scripts/probe.sh` (`plugins_enabled` threshold
+  `-ge 10`), `scripts/verify-obsidian.sh` (header comment).
+- Migration: a recipient who already installed 1.0.0 keeps both plugins; nothing in the bundle
+  depends on them, remove them from Community plugins by hand if unwanted.
+
 ## [1.0.0] — 2026-09-10 — первый выпуск / first release
 
 ### Для человека

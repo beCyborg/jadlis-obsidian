@@ -1,6 +1,6 @@
 #!/bin/sh
 # Turn Restricted mode off, then check the result through the running Obsidian:
-# 12 community plugins enabled, theme Border, no startup errors, the shipped hotkey bound.
+# 10 community plugins enabled, theme Border, no startup errors, the shipped hotkey bound.
 # Needs a running Obsidian with $VAULT open.
 set -u
 . "$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)/common.sh"

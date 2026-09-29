@@ -1,6 +1,6 @@
 # Что лежит в `assets/obsidian`
 
-## 12 community-плагинов
+## 10 community-плагинов
 
 | Плагин | Версия | Автор | Зачем он в этой сборке |
 |---|---|---|---|
@@ -8,10 +8,8 @@
 | `advanced-canvas` | 7.0.0 | Developer-Mike | схемы и презентации на canvas |
 | `daily-note-calendar` | 2.8.0 | bartkessels | календарь в боковой панели, переход к заметке дня |
 | `folder-notes` | 1.8.26 | Lost Paul | у папки появляется своя заметка-обложка |
-| `periodic-notes` | 0.0.17 | Liam Cain | заметки дня, недели, месяца, квартала |
 | `my-svgs` | 1.0.1 | Omar Badawy | свои SVG как иконки в общей библиотеке |
 | `iconic` | 1.1.10 | Holo | иконки и цвета папок, вкладок, закладок |
-| `obsidian-linter` | 1.32.0 | Victor Tao | автоформат заметки при сохранении, `created`/`modified` в frontmatter |
 | `dragger` | 2.0.0 | Ariestar | перетаскивание блоков текста мышью, как в Notion |
 | `sidebar-highlights` | 1.41.0 | trevware | выделения и комментарии к ним в боковой панели |
 | `editing-toolbar` | 4.1.3 | Cuman | панель форматирования над текстом |
@@ -27,11 +25,9 @@
 | Плагин | `data.json` | Почему |
 |---|---|---|
 | `obsidian-style-settings` | как есть | только цвета и переменные темы |
-| `obsidian-linter` | как есть | правила форматирования, списки исключений пустые |
 | `editing-toolbar` | как есть | состав панели и цвета |
 | `dragger` | как есть | внешний вид ручек перетаскивания |
 | `folder-notes` | как есть | флаги поведения, `templatePath` пустой |
-| `periodic-notes` | без `folder`/`template` | там были папки методологии владельца |
 | `daily-note-calendar` | без `folder`/`templateFile` | то же самое |
 | `my-svgs` | без `iconsFolder` | путь к папке иконок владельца |
 | `iconic` | без иконок и правил | ключи были путями заметок и папок владельца |

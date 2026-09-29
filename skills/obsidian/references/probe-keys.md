@@ -17,7 +17,7 @@
 | `plugins_list` | `community-plugins.json` совпадает с поставкой | 5 |
 | `theme_border` | `appearance.json` → `cssTheme: Border` | 5 |
 | `restricted_mode` | Restricted mode выключен | 6 |
-| `plugins_enabled` | Obsidian отдаёт ≥12 включённых community-плагинов | 6 |
+| `plugins_enabled` | Obsidian отдаёт ≥10 включённых community-плагинов | 6 |
 | `skills_bundle` | установлен `obsidian@obsidian-skills` | 8 |
 
 Первая строка вывода — `vault=<путь>`: с ней видно, куда скрипт целится.

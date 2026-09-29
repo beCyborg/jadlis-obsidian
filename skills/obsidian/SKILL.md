@@ -1,6 +1,6 @@
 ---
 name: obsidian
-description: "Второй шаг маршрута Jadlis: ставит Obsidian один в один с владельцем — приложение, подписка Sync, папки vault, конфигурация .obsidian (12 плагинов, тема Border, хоткеи), скиллы Obsidian для Claude Code и CLAUDE.md внутри vault.\nTRIGGER when: user says \"/obsidian\", \"настрой obsidian\", \"поставь obsidian\", \"obsidian как у тебя\", \"перенеси настройки obsidian\", \"второй шаг\", \"шаг 2 маршрута\", \"setup obsidian\", \"obsidian статус\", \"проверь obsidian\".\nDO NOT TRIGGER when: настройка самого Claude Code (~/.claude, модели, права) — это первый шаг маршрута; голос и диктовка — /jadlis-voice; работа с заметками в уже настроенном vault — скиллы obsidian-cli / obsidian-markdown из бандла."
+description: "Второй шаг маршрута Jadlis: ставит Obsidian один в один с владельцем — приложение, подписка Sync, папки vault, конфигурация .obsidian (10 плагинов, тема Border, хоткеи), скиллы Obsidian для Claude Code и CLAUDE.md внутри vault.\nTRIGGER when: user says \"/obsidian\", \"настрой obsidian\", \"поставь obsidian\", \"obsidian как у тебя\", \"перенеси настройки obsidian\", \"второй шаг\", \"шаг 2 маршрута\", \"setup obsidian\", \"obsidian статус\", \"проверь obsidian\".\nDO NOT TRIGGER when: настройка самого Claude Code (~/.claude, модели, права) — это первый шаг маршрута; голос и диктовка — /jadlis-voice; работа с заметками в уже настроенном vault — скиллы obsidian-cli / obsidian-markdown из бандла."
 allowed-tools: Bash, Read, Write, Edit, AskUserQuestion
 argument-hint: "[статус | ставить | заново]"
 ---
@@ -92,7 +92,7 @@ sh "${CLAUDE_PLUGIN_ROOT}/scripts/obsidian-config.sh"
 OVERWRITE=1 sh "${CLAUDE_PLUGIN_ROOT}/scripts/obsidian-config.sh"
 ```
 
-Что кладётся: 12 community-плагинов, тема Border, CSS-сниппет `hide-files`, хоткеи,
+Что кладётся: 10 community-плагинов, тема Border, CSS-сниппет `hide-files`, хоткеи,
 `app.json`, `appearance.json`, `core-plugins.json`. Что не кладётся: `workspace*.json`,
 закладки, граф, данные Sync и Publish. Таблица плагинов — `references/plugins.md`.
 
@@ -114,7 +114,7 @@ Obsidian уже запущен — папка регистрируется че�
 sh "${CLAUDE_PLUGIN_ROOT}/scripts/verify-obsidian.sh"
 ```
 
-Жди в выводе: 12 включённых плагинов, тема `Border`, пустые ошибки, строку про хоткей.
+Жди в выводе: 10 включённых плагинов, тема `Border`, пустые ошибки, строку про хоткей.
 Чего-то нет — назови ровно это, не пересказывай весь вывод.
 
 Хоткей проверяется **действием**, а не наличием файла. Попроси человека открыть любую

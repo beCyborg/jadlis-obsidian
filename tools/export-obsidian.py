@@ -32,11 +32,9 @@ LICENSE_GLOBS = ("LICENSE*", "license*", "COPYING*", "NOTICE*")
 # Values are the keys stripped before writing (dotted paths, "*" = every item of a mapping).
 DATA_JSON_POLICY: dict[str, list[str]] = {
     "obsidian-style-settings": [],          # theme knobs only, no paths — the theme needs them
-    "obsidian-linter": [],                  # rule toggles, foldersToIgnore/filesToIgnore empty
     "editing-toolbar": [],                  # toolbar layout and colours, no paths
     "dragger": [],                          # drag handles UI, no paths
     "folder-notes": [],                     # behaviour flags, templatePath empty
-    "periodic-notes": ["*.folder", "*.template"],
     "daily-note-calendar": ["*.folder", "*.templateFile"],
     "my-svgs": ["iconsFolder"],
     "iconic": ["fileIcons", "fileRules", "folderRules", "tabIcons", "bookmarkIcons", "tagIcons"],
